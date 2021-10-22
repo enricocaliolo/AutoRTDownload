@@ -52,9 +52,7 @@ if __name__ == '__main__':
             image_name = image_url.split('/')[-1]
             path = r'D:\Enrico\Imagens\RTs'   
 
-            images_in_folder = os.listdir(path)
-
-            if image_name in images_in_folder:
+            if image_name in images_already_downloaded:
                 print('The image was already downloaded')    
 
             else:    
