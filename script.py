@@ -1,14 +1,19 @@
+# This program will automatically download my RTs on Twitter and save them on my folder. 
+# It can be extended to other users too. You just need to get your tokens.
+
 import tweepy
 import requests
 import os
 
 def sort_database(names_of_images):
+
     names_of_images.sort()
     with open('database.txt', 'w') as file:
         for name in names_of_images:
             file.write(f'{name}\n')
 
 if __name__ == '__main__':
+
     with open('tokens.txt', 'r') as file:
         api_key = file.readline().split('/')[0]
         api_secret_key = file.readline().split('/')[0]
