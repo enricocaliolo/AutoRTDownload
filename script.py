@@ -28,7 +28,7 @@ if __name__ == '__main__':
     tweets = tweepy.Cursor(
         api.user_timeline,
         exclude_replies=True
-        ).items(30)
+        ).items(50)
 
     images_already_downloaded = []
 
